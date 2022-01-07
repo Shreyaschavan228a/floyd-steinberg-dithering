@@ -1,11 +1,13 @@
+//Floyd-Steinberg Dithering
+//https://en.wikipedia.org/wiki/Floyd%E2%80%93Steinberg_dithering
 
-//const prompt = require('prompt');
+
+const prompt = require('prompt');
 const Jimp  = require('jimp');
 
 
 let size = 4;
-let path = './kitten.jpg'
-
+let path = 'kitten.jpg'
 
 Jimp.read(path, (err, imgFile)=>{
     if(err){
@@ -59,7 +61,7 @@ Jimp.read(path, (err, imgFile)=>{
 
 
 
-    img.writeAsync('clone.jpg')
+    img.writeAsync(`clone.jpg`)
         .catch((err)=>{
             throw err;
         })
