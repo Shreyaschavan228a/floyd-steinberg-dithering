@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Shreyaschavan228a/floyd-steinberg-dithering#readme",
   "dependencies": {
-    "jimp": "^0.16.1"
+    "jimp": "^0.16.1",
+    "prompt": "^1.2.0"
   }
 }
